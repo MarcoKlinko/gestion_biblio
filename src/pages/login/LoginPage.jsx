@@ -1,9 +1,11 @@
 import React from "react";
 
-import style from "./style.module.css";
 import { Link } from "react-router-dom";
+import style from "./style.module.css";
 
 const LoginPage = () => {
+
+    document.title = "Login | ZOZY EEEEE"
     
     return  <div className={`${style.login__container}`}>
                 <form className="border border-success rounded p-5">
