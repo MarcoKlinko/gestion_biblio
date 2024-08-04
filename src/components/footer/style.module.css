@@ -1,6 +1,7 @@
 .footer__wrapper {
     height: 50px;
-    position: fixed;
     width: 100%;
     bottom: 0;
+    text-align: center;
+    padding: 50px;
 }

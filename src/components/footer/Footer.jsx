@@ -3,7 +3,7 @@ import style from './style.module.css';
 
 const Footer = () => {
     
-    return <footer className={`bg-success text-white ${style.footer__wrapper}`}>
+    return <footer className={`bg-info text-white mt-5 ${style.footer__wrapper}`}>
         footer
     </footer>
 }
