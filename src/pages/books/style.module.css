@@ -1,7 +1,79 @@
-.card__wrapper {
-    width: 355px;
+.book_wrapper{
+    background-color: #ffffffda;
+    display: flex;
+    padding: 50px;
+}
+
+.bookCard {
+    background-color: #a3d9db;
+    padding: 30px;
+    border-radius: 20px;
+    height: 350px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bookCard:hover {
+    cursor: pointer;
+    box-shadow: 5px 10px 5px #5a6263;
+    transition: all .8s;
+}
+
+.bookCard img {
+    border-radius: 20px;
+    width: 150px;
 }
 
 .book__card__body a {
     text-decoration: none;
+}
+
+.asideBook {
+    border: #0dcaf0 1px solid;
+    padding: 50px 10px;
+    border-radius: 10px;
+}
+
+.bookSearch {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bookSearch input {
+    border: 1px solid #0dcaf0;
+    padding: 5px 10px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.bookSearch input:focus {
+    outline-color: #0dcaf0;
+    outline-width: 1px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+.search {
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding: 5px 15px;
+    border: 1px solid #0dcaf0;
+    color: #ffff;
+    cursor: pointer;
+}
+
+.categoriyList li {
+    list-style: none;
+    padding: 5px;
+    margin-top: 10px;
+}
+
+
+.categoriyList li a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #000;
 }

@@ -1,5 +1,7 @@
 import React from "react";
 import style from "./style.module.css";
+import { faSearch } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const bookList = [
     { id: 1, name: "book1", imgUrl:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7MmZsXpsy4zN3ezEZ4O8JfgwnthKeMogyRA&s"},
@@ -13,26 +15,47 @@ const BookPage = () => {
 
     document.title = "Books | ZOZY EEEEE"
     
-    return <div classNameName="container-fluid">
-        <div className="row gap-1 p-5">
+    return <div className={`container ${style.book_wrapper}`}>
+        <div className="row">
         {
             bookList.map( book => 
-                <div key={book.id} className={`col-3 ${style.card__wrapper} my-2`}>
-                    <div className="card">
+                <div key={book.id} className={`col-md-4 col-lg-3 ${style.card__wrapper} my-2`}>
+                    <div className={`${style.bookCard} bg-info`}>
                         <img src={book.imgUrl} className="card-img-top image-fluid" alt={book.name} />
                         <div className="card-body">
                             <h5 className="card-title text-center">{book.name}</h5>
-                            <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        </div>
-                        <div className={`card-body ${style.book__card__body}`}>
-                            <a href="#" className="card-link">Card link</a>
-                            <a href="#" className="card-link">Another link</a>
+                            <p className="card-text">Some quick example .</p>
                         </div>
                     </div>
                 </div>
             )
         }
-         </div>
+        </div>
+        <div className={`${style.asideBook}`}>
+            <div className={`${style.bookSearch}`}>
+                <input type="text" placeholder="Search"/>
+                <div className={`bg-info ${style.search}`}>
+                    <FontAwesomeIcon icon={faSearch} />
+                </div>
+            </div>
+            <ul className={style.categoriyList}>
+                <li>
+                    <a href="">Caterory 1</a>
+                </li>
+                <li>
+                    <a href="">Caterory 2</a>
+                </li>
+                <li>
+                    <a href="">Caterory 3</a>
+                </li>
+                <li>
+                    <a href="">Caterory 4</a>
+                </li>
+                <li>
+                    <a href="">Caterory 5</a>
+                </li>
+            </ul>
+        </div>
     </div>
 }
 
