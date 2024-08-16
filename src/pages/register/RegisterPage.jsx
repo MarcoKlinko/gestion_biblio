@@ -10,9 +10,9 @@ const RegisterPage = () => {
     return <div className={`${style.register__container}`}>
                 <form className="border border-success rounded p-5">
                     <fieldset className="w-100">
-                        <legend className="text-center">S'inscrire</legend>
+                        <legend className="text-center">Register</legend>
                         <div>
-                            <label for="full_name" className="form-label mt-4">Nom et prénom</label>
+                            <label for="full_name" className="form-label mt-4">Full name</label>
                             <input type="text" className="form-control" id="full_name"  placeholder="Votre nom complet" />
                         </div>
                         <div>
@@ -24,8 +24,8 @@ const RegisterPage = () => {
                             <input type="password" className="form-control" id="exampleInputPassword1" placeholder="Password" autocomplete="off" />
                         </div>
                         <div className="mt-5">
-                            <button type="submit" className="form-control btn btn-md btn-success mb-2" >S'inscrire</button>
-                            <span className="mt-2">Vous aves déjà un compte ? <Link to="/login" className="text-success nav-link d-inline "> <b>Se connecter</b>  </Link></span>
+                            <button type="submit" className="form-control btn btn-md btn-info mb-2" >Register now</button>
+                            <span className="mt-2">Already have an account ? <Link to="/login" className="text-success nav-link d-inline "> <b>Sign in</b>  </Link></span>
                         </div>
                     </fieldset> 
                 </form>

@@ -20,8 +20,8 @@ const LoginPage = () => {
                             <input type="password" className="form-control" id="exampleInputPassword1" placeholder="Password" autocomplete="off" />
                         </div>
                         <div className="mt-5">
-                            <button type="submit" className="form-control btn btn-md btn-success mb-2" >Se connecter</button> 
-                            <span>Vous n'aves pas de compte ? <Link to="/register" className="text-success nav-link d-inline"><b> S'incrire </b></Link></span>
+                            <button type="submit" className="form-control btn btn-md btn-info mb-2" >Sign in</button> 
+                            <span>Don't have an account ? <Link to="/register" className="text-info nav-link d-inline"><b> SingUp </b></Link></span>
                         </div>
                     </fieldset> 
                 </form>
