@@ -4,7 +4,7 @@ import bgcard from "../../assets/card-header.png";
 
 const HomePage = () => {
 
-    document.title = "Home | ZOZY EEEEE"
+    document.title = "Home"
     
     return <div className={`${s.main}`}>
         <div className={`${s.bannierImage}`}>

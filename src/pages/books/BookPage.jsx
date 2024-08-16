@@ -13,7 +13,7 @@ const bookList = [
 
 const BookPage = () => {
 
-    document.title = "Books | ZOZY EEEEE"
+    document.title = "Books"
     
     return <div className={`container ${style.book_wrapper}`}>
         <div className="row">

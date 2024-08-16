@@ -2,7 +2,7 @@ import React from "react";
 
 const AboutPage = () => {
 
-    document.title = "Home | ZOZY EEEEE"
+    document.title = "About us"
 
     return <section className="section-gap info-area" id="about">
     <div className="container">				

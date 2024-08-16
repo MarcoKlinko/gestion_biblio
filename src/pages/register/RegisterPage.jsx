@@ -5,7 +5,7 @@ import style from "./style.module.css";
 
 const RegisterPage = () => {
 
-    document.title = "Register | ZOZY EEEEE"
+    document.title = "Register"
     
     return <div className={`${style.register__container}`}>
                 <form className="border border-success rounded p-5">
